@@ -1,0 +1,205 @@
+<html>
+  <head>
+    <title>Anti-Money Laundering</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <link rel="stylesheet" href="../static/css/animate.css">
+    
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../static/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="../static/css/flaticon.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+  </head>
+  <body>
+
+    <div class="wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="bg-wrap">
+							<div class="row">
+								<div class="col-md-6 d-flex align-items-center">
+									<p class="mb-0 phone pl-md-2">
+										<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +00 1234 567</a> 
+										<a href="#"><span class="fa fa-paper-plane mr-1"></span> aml@info.com</a>
+									</p>
+								</div>
+								<div class="col-md-6 d-flex justify-content-md-end">
+									<div class="social-media">
+						    		<p class="mb-0 d-flex">
+						    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+						    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+						    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+						    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+						    		</p>
+					        </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	    	<a class="navbar-brand" href="">Anti-Money Laundering</a>
+	    	
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="fa fa-bars"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav m-auto">
+	        	<li class="nav-item active"><a href="/admin" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="/logout" class="nav-link">Logout</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+   
+
+    <section class="ftco-section bg-light">
+    	<div class="container">
+    		<div class="row justify-content-center">
+					<div class="col-md-12">
+						<div class="wrapper">
+							<div class="row no-gutters">
+								<div class="col-lg-12 col-md-7 order-md-last d-flex align-items-stretch">
+									<div class="contact-wrap w-100 p-md-5 p-4">
+										<h3 class="mb-4"></h3>
+										<div id="form-message-warning" class="mb-4"></div> 
+					      		<div id="form-message-success" class="mb-4">
+					            
+					      		</div>
+										<form method="POST" action="/process1">
+											<div class="row">
+												
+										 <h4 align="center">Preprocessing</h4>
+  <table width="80%" border="1" align="center">
+    <tr>
+      <th>Column</th>
+      <th>Non- Null Count </th>
+      <th>Dtype</th>
+    </tr>
+	
+
+	
+    <tr>
+      <td>
+	  {% for rs in data[0] %}
+	  
+	  {{rs}}<br>
+	  {% endfor %}	  </td>
+      <td> 
+	  {% for rs2 in data[1] %}
+	  
+	  {{rs2}}<br>
+	  {% endfor %}</td>
+      <td> 
+	  {% for rs3 in data[2] %}
+	  
+	  {{rs3}}<br>
+	  {% endfor %}</td>
+    </tr>
+  </table>
+  <p align="center">Memory usage {{mem}}</p>, 
+  <p align="center">No. of Columns: {{cols}} </p>, 
+  <p align="center">No. of Rows: {{rows}} </p>
+												
+												<div class="col-md-12">
+													<div class="form-group">
+														<p align="center"><a href="/process1" class="btn btn-primary">Data Analysis</a></p>
+														<div class="submitting"></div>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+    	</div>
+    </section>
+
+   
+    <footer class="footer">
+			<div class="container-fluid px-lg-5">
+				<div class="row">
+					<div class="col-md-9 py-5">
+						<div class="row">
+							<div class="col-md-4 mb-md-0 mb-4">
+								<h2 class="footer-heading">About us</h2>
+								
+								<ul class="ftco-footer-social p-0">
+		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
+		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+		            </ul>
+							</div>
+							<div class="col-md-8">
+								<div class="row justify-content-center">
+									<div class="col-md-12 col-lg-10">
+										<div class="row">
+											<div class="col-md-4 mb-md-0 mb-4">
+												<h2 class="footer-heading">Services</h2>
+												<ul class="list-unstyled">
+						              <li><a href="/admin" class="py-1 d-block">Home</a></li>
+						              <li><a href="/logout" class="py-1 d-block">Logout</a></li>
+						            </ul>
+											</div>
+											
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row mt-md-5">
+							<div class="col-md-12">
+								<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					  Anti-Money Laundering <a href="https://colorlib.com" target="_blank"></a>
+					  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 py-md-5 py-4 aside-stretch-right pl-lg-5">
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+    
+  
+
+  <!-- loader -->
+  <!--<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>-->
+
+
+  <script src="../static/js/jquery.min.js"></script>
+  <script src="../static/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="../static/js/popper.min.js"></script>
+  <script src="../static/js/bootstrap.min.js"></script>
+  <script src="../static/js/jquery.easing.1.3.js"></script>
+  <script src="../static/js/jquery.waypoints.min.js"></script>
+  <script src="../static/js/jquery.stellar.min.js"></script>
+  <script src="../static/js/jquery.animateNumber.min.js"></script>
+  <script src="../static/js/owl.carousel.min.js"></script>
+  <script src="../static/js/jquery.magnific-popup.min.js"></script>
+  <script src="../static/js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="../static/js/google-map.js"></script>
+  <script src="../static/js/main.js"></script>
+    
+  </body>
+</html>
